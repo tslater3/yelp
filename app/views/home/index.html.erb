@@ -4,4 +4,3 @@
 <%= button_to 'Log Out',destroy_user_session_path,method: :delete %>
 
 <h2>Welcome<%=current_user.first_name %></h2>
-<h2>Welcome<%=current_user.reviews.first.rating %></h2>

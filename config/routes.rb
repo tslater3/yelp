@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'restaurants/index', to: 'restaurants#index', as: '/restaurants'
+
+  get 'restaurants/show'
+
+  resources :reviews
+
   root to: 'home#index'
 
   devise_for :users,controllers: {registrations:'registrations'}
